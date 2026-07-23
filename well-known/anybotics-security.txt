@@ -1,0 +1,7 @@
+Contact: mailto:cybersecurity@anybotics.com
+Expires: 2026-07-15T11:00:00.000Z
+Encryption: https://anybotics.com/gpg-key.txt
+Preferred-Languages: en,de
+Canonical: https://anybotics.com/.well-known/security.txt
+Policy: https://anybotics.com/responsible-disclosure
+Hiring: https://anybotics.com/career

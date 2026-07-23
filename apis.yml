@@ -1,8 +1,24 @@
 aid: anybotics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/anybotics.png
 name: ANYbotics
-description: 'ANYbotics is a company surfaced as a portfolio company of bessemer-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: deep-tech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'ANYbotics is a Swiss deep-tech robotics company that builds ANYmal, an autonomous
+  four-legged inspection robot used to automate routine and hazardous industrial inspections across
+  power and utilities, oil and gas, mining, chemicals, and metals. Its platform pairs the legged robot
+  with inspection-management software and analytics to increase plant uptime, cut costs, and remove
+  workers from dangerous areas. ANYbotics is backed by Bessemer Venture Partners. No public developer
+  API, SDK, or OpenAPI surface is exposed; this API Evangelist profile currently captures the company''s
+  published security and trust posture.'
 url: https://raw.githubusercontent.com/api-evangelist/anybotics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Deep Tech
+- Robotics
+- Industrial Automation
+- Autonomous Inspection
+- Legged Robots
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/anybotics-trust-center.yml
+- type: Compliance
+  url: security/anybotics-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/anybotics-vulnerability-disclosure.yml
+- type: Security
+  url: security/anybotics-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/anybotics-domain-security.yml
+- type: WellKnown
+  url: well-known/anybotics-well-known.yml
+- type: SecurityTxt
+  url: well-known/anybotics-security.txt
 - type: Website
   url: https://www.anybotics.com/anymal-autonomous-legged-robot/
+- type: Support
+  url: https://support.anybotics.com/
+- type: SecurityPolicy
+  url: https://anybotics.com/responsible-disclosure
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,24 @@
+generated: '2026-07-17'
+method: probed
+source: live HTTP probes of https://www.anybotics.com/.well-known/*
+host: www.anybotics.com
+endpoints:
+- path: /.well-known/security.txt
+  status: 200
+  file: anybotics-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+notes: >-
+  Only a security.txt is published. No OIDC/OAuth discovery, API catalog, or
+  AI-plugin manifest is exposed. Note the published security.txt Expires value
+  (2026-07-15) had lapsed at probe time (2026-07-17).
