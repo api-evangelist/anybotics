@@ -18,7 +18,18 @@ endpoints:
 - path: /.well-known/ai-plugin.json
   status: 404
   file: null
-notes: >-
-  Only a security.txt is published. No OIDC/OAuth discovery, API catalog, or
-  AI-plugin manifest is exposed. Note the published security.txt Expires value
-  (2026-07-15) had lapsed at probe time (2026-07-17).
+notes: Only a security.txt is published. No OIDC/OAuth discovery, API catalog, or AI-plugin manifest is
+  exposed. Note the published security.txt Expires value (2026-07-15) had lapsed at probe time (2026-07-17).
+hosts:
+- host: www.anybotics.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: anybotics-security.txt
+x-shape-fix:
+  converted: '2026-08-20'
+  from: endpoints
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent. Promoted ONLY the 2xx rows out of
+    the probe log; non-2xx probes are real negative results and were left in place, not converted into
+    documents.
