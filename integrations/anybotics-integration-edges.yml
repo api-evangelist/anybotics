@@ -20,7 +20,8 @@ edges:
     - humble
     - jazzy
     - kilted
-    packages: 15
+    - rolling
+    packages: 16
     sample_packages:
     - grid_map
     - grid_map_cmake_helpers
@@ -32,7 +33,7 @@ edges:
     - grid_map_loader
     signal_note: 'participation only: packages/distros are context, never read'
     detected_by: sweep-industrial-robotics.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   detected_by: sweep-industrial-robotics.py
   first_seen: '2026-10-15'
 generated: '2026-10-15'
